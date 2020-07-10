@@ -1,0 +1,479 @@
+*{margin:0;padding:0;}
+
+body{
+	background:url('../imgs/fondomain.jpg') 100% 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing:.1em;
+	width:100vw;
+	overflow-x:hidden;
+}
+header{
+	position:fixed;
+	z-index:3;
+	background:#221F1F;
+	display:block;
+	width:100vw;
+	border-bottom:#202020 1px solid;
+}
+header p{
+	color:#9E9E9E!important;
+	display:inline-block;
+}
+header nav{
+	display:inline-block;
+}
+main{
+	background:url('../imgs/fondomain.jpg') 100% 100%;
+	min-height:99vh;
+	margin-bottom:70vh;
+	position:absolute;
+	padding-bottom:5em;
+	width:100vw;
+	padding-top:6em;
+	z-index:2;
+	border-bottom:#202020 1px solid;
+}
+h1,h2{
+	text-align:center;
+	color:white;
+	font-family: 'ac_lineregular', sans-serif;
+	font-size:3em;
+	text-transform:uppercase;
+}
+h1{
+	font-size:5em!important;
+}
+h2{
+	color:#4C3434;
+	font-size:2em;
+	text-align:left;
+	padding-left:.1em;
+	font-size:2.7em;
+	font-weight:bold;
+	text-shadow:2px 2px #917575; 
+	letter-spacing:0.2em;
+	margin:0!important;
+}
+#formconfesar h2{
+	color:#E2E0E0;
+	font-size:2.3em;
+	position:absolute;
+	text-align:right;
+}
+h3{
+	padding-bottom:.6em;
+	color:#1DBAA2;
+}
+#login, #confesiones>div {
+	display:inline-block;
+	font-size:1.2em;
+	background:rgba(255,255,255,0.1);
+	box-shadow:2px 2px 2px grey, -2px -2px 1px grey;
+}
+#confesiones>div div:nth-child(2){
+	padding:1em 2em;
+}
+#login label{
+	display:block;
+	color:white;
+	text-align:left;
+}
+#login div input{
+	width:30vw;
+	font-size:1em;
+	padding:.5em;
+	margin:0.8em;
+}
+#login div:nth-last-child(1){
+	text-align:right;
+	margin-top:1em;
+	margin-right:1em;
+}
+#modal>div>form input[type="button"]{
+	background:none;
+	border:none;
+}
+/* .panel-body{
+	text-align:center;
+} */
+.panel-body p{
+	padding-top:10vh;
+	font-size:3em;
+	margin:0!important;
+}
+form{
+	padding:1em 2em;
+}
+#login div input[type="button"]:hover,#formconfesar>form div input[type="button"]:hover,#modal>div>form input[type="button"]:hover{
+	background:url("../imgs/entrar_hover.png") no-repeat;
+}
+#login div input[type="button"],#formconfesar>form div input[type="button"],#modal>div>form input[type="button"]{
+	background:url("../imgs/entrar.png") no-repeat;
+	cursor:pointer;
+	display:inline-block;
+	width:62px;
+	height:60px;
+	border:none;
+	text-indent:-200px;
+	overflow:hidden;
+}
+#formconfesar>form div input[type="button"]:hover,#modal>div>form input[type="button"]:hover{
+	background:url("../imgs/publicar_hover.png");
+}
+#formconfesar>form div input[type="button"],#modal>div>form input[type="button"]{
+	background:url("../imgs/publicar.png") no-repeat;
+	width:51px;
+}
+p{
+	color:white;
+	margin-left:2em;
+	font-size:1.2em;
+	display:inline-block;
+}
+footer p{
+	position:absolute;
+	bottom:10px;
+}
+footer{
+	height:60vh;
+	width:100vw;
+	position:fixed;
+	bottom:0;
+	z-index:1;
+	background:url('../imgs/personita.png') no-repeat center;
+}
+#cajaabout p{
+	padding-left:250px;
+	padding-top:50px;
+	padding-right:50px;
+	display:inline-block;
+	font-size:1.5em;
+}
+#cajaabout{
+	background:url("../imgs/persona.png") no-repeat rgba(255,255,255,0.1);
+	box-shadow:2px 2px 2px grey, -2px -2px 1px grey;
+	display:inline-block;
+	height:350px;
+	margin:0 25vw;
+	border-radius:5px;
+}
+main>#cajaabout{
+	text-align:center;
+}
+#tope{
+	bottom:0px;
+	left:0px;
+	float:left;
+	overflow:hidden;
+	color:black;
+	position:fixed;
+	display:inline-block;
+	padding:1em;
+	padding-left:3.2em;
+	border-radius:10px 10px 0 0;
+	font-weight:bold;
+	background:white;
+}
+header p{
+	color:white;
+	float:right;
+	margin-right:4em;
+	padding-top:1.2em;
+	text-transform: uppercase;
+}
+header p span{
+	margin:0 .5em;
+	color:grey;
+	font-size:1.3em;
+	font-weight:bold;
+}
+#formconfesar>form,#modal>div>form{
+	padding:1em;
+	margin:.8em;
+	padding-left:2em;
+	margin-left:12em;
+	width:500px;
+	background:rgba(0,0,0,0.5);
+	text-align:left;
+}
+#formconfesar>form textarea,#modal>div>form textarea{
+	resize:none;
+	width:301px;
+	padding:.2em;
+	height:100px;
+	margin:.8em;
+}
+#formconfesar>form label,#modal>div>form label{
+	color:white;
+	font-weight:bold;
+}
+#formconfesar>form input,#modal>div>form input{
+	width:300px;
+	margin:.8em;
+}
+#confesiones, #formconfesar,#modal{
+	text-align:center;
+	padding:0 12%;
+}
+#confesiones>div{
+	text-align:left;
+	margin:.8em;
+	vertical-align:top;
+	color:white;
+	width:800px;
+	height:auto!important;
+	background:rgba(255,255,255,0.2);
+}
+#confesiones>div div{
+   word-wrap: break-word;
+}
+#confesiones>div h3{
+	word-wrap:break-word;
+	display:inline-block;
+}
+#confesiones div:nth-child(2) div:nth-child(4){
+	padding-left:1em;
+}
+#confesiones div:nth-child(2) div:nth-child(3){
+	float:right;
+	font-weight:bold;
+	color:#B59F9F;
+	text-transform:uppercase;
+}
+#confesiones div:nth-child(2) div:nth-child(5),#confesiones div:nth-child(2) div:nth-child(1){
+	text-align:right;
+	color:black;
+	font-weight:bold;
+	font-family:Arial;
+	display:inline-block;
+	float:right;
+	font-size:15px;
+}
+#confesiones div:nth-child(2) div:nth-child(1){
+	color:#A9927A;
+	padding-left:1em;
+	float:none;
+}
+.borrar_confesion:hover{
+	background:url("../imgs/delete_hover.png");
+}
+.borrar_confesion{
+	cursor:pointer;
+	display:inline-block;
+	text-indent:-100px;
+	overflow:hidden;
+	background:url("../imgs/delete.png");
+	width:27px;
+	height:30px;
+	position:relative;
+	margin:.8em;
+}
+.editar_confesion:hover{
+	background:url("../imgs/editar_hover.png");
+}
+.editar_confesion{
+	cursor:pointer;
+	display:inline-block;
+	text-indent:-100px;
+	overflow:hidden;
+	background:url("../imgs/editar.png");
+	width:30px;
+	height:30px;
+	position:relative;
+	margin:.8em;
+}
+
+#filtrar_confesiones{
+	background:none;
+	border:none;
+	background:url("../imgs/libro.png") no-repeat;
+	height:60px;
+	display:inline-block;
+	width:57px;
+	text-indent:400px;
+	overflow:hidden;
+}
+#filtrar_confesiones+p{
+	margin-left:.5em;
+}
+#filtrar_confesiones_div:hover{
+	cursor:pointer;
+	background:rgba(255,255,255,0.2);
+}
+#filtrar_confesiones_div{
+	float:right;
+	display:inline-block;
+	margin-top:3em;
+	margin-right:17%;
+	padding:.5em;
+	border-radius:5px;
+	box-shadow:1px 1px 10px white;
+	background:rgba(145,117,117,0.3);
+}
+#modal{
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	background:black;
+	width: 100%; 
+	height: 100%; 
+}
+#modal h2{
+	padding-top:3em;
+	display:inline-block;
+	vertical-align:top;
+}
+#modal>div{
+	display:inline-block;
+	padding-top:17%;
+	vertical-align:top;
+}
+#cerrar{
+	color:white;
+	font-size:2.5em;
+	position:absolute;
+	padding:10% 0 0 0;
+	cursor:pointer;
+}
+.form-group:nth-child(3) div{
+	text-align:left!important;
+	margin:0!important;
+	display:inline-block;
+}
+.form-group:nth-child(3) label{
+	display:inline-block!important;
+	font-size:.8em;
+	cursor:pointer;
+}
+.form-group:nth-child(3) label:nth-child(1){
+	font-size:1em;
+	display:block!important;
+}
+.form-group input[type="radio"]{
+	display:inline-block!important;
+	width:auto!important;
+	height:auto;
+	cursor:pointer;
+}
+#modal .form-group{
+	padding-left:0!important;
+}
+#confesiones div:nth-child(2) div:nth-child(5){
+	padding:.5em 0;
+}
+.table-bordered{
+	border:none!important;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+	background:none!important;
+
+}
+td{
+	border-bottom:white 2px solid;
+	padding:1em;
+	color:white;
+	border:none!important;
+}
+th,table tr td:nth-child(1){
+	color:#1DBAA2;
+	text-transform:uppercase;
+	padding:0 .5em;
+	font-size:2em;
+	font-weight:bold;
+	border:none!important;
+}
+tr{
+	border-bottom:solid 1px grey;
+}
+.trconfesion td:nth-child(1){
+	text-align:center;
+}
+.trconfesion td:nth-child(2){
+	color:pink;
+	font-size:1.2em;
+	font-family:'Corbel';
+}
+.trconfesion td:nth-child(3){
+	font-size:1em;
+	font-family:'Arial';
+}
+.trconfesion td:nth-child(6){
+	font-size:1em;
+	font-family:'Arial';
+		text-transform:uppercase;
+
+}
+.trconfesion td:nth-child(4), .trconfesion td:nth-child(5){
+	color:grey;
+}
+table tr td:nth-last-child(2) a:hover{
+	background:#f0ad4e url("../imgs/editar_hover.png") no-repeat center;
+}
+table tr td:nth-last-child(1) a:hover{
+	background:url("../imgs/delete_hover.png") no-repeat;
+}
+table tr td:nth-last-child(2) a,table tr td:nth-last-child(1) a{
+	display:inline-block;
+	text-indent:-300px;
+	overflow:hidden;
+	width:35px;
+	height:30px;
+	background:#f0ad4e url("../imgs/editar.png") no-repeat center;
+}
+table tr td:nth-last-child(1) a{
+	background:url("../imgs/delete.png") no-repeat;
+}
+.botones_edicion_borrar{
+	text-align:left!important;
+	float:none!important;
+}
+.oculto{
+	visibility:hidden;
+	width:0;
+	height:0;
+}
+input, select, textarea{
+	font-family:arial!important;
+}
+.panel{
+	font-size:1.2em;
+	background:rgba(255,255,255,0.1);
+	box-shadow:2px 2px 2px grey, -2px -2px 1px grey;
+}
+.panel label{
+	margin:0;
+	padding:0;
+	color:white;
+	width:5%;
+}
+.ellogin{
+	background:url('../imgs/entrar_grande_hover.png') no-repeat right center;
+	background-size: 200px;
+
+}
+.registro label{
+	width:30%;
+}
+.hiperconfesiones a{
+	margin:0 2em;
+	font-size:2em;
+	padding:.5em 1.2em;
+	background:#673ab7;
+	border-color:grey;
+}
+.hiperconfesiones{
+	padding:1.3em 0 5em 0;
+	text-align:center;
+}
+textarea{
+	resize:none;
+}
+.confesar label{
+	width:6%;
+}
+input[type=submit]{
+	font-family:'ac_lineregular'!important;
+}
+.deleteconf{
+	padding-top:0;
+}
