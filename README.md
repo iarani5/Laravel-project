@@ -25,3 +25,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Project
+
+Realizar un sitio autoadministrable en Laravel 5.2 que incluye un registro y login de usuarios, con al menos dos niveles de acceso. Este debe tener en la ruta principal, un sitio con home, listado de registros (qué son estos registros será definido por el alumno), desde la cual se pueda clickear para ver en más detalle un item, y un registro de usuarios. En este último, un usuario podrá registrarse para tener acceso a funcionalidades extras en el sitio (definidas por el alumno según sea acorde a su entrega). 
+Además, debe haber una sección o acciones de administración no visible(s) para los visitantes o usuarios comunes de la página principal. Esta requerirá de un login de un usuario administrador. Una vez logueado, el administrador deberá poder hacer acciones de ABM (Altas, Bajas y Modificaciones) de registros y de usuarios.
